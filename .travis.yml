@@ -1,5 +1,8 @@
-install:
-  - curl -sLo - http://j.mp/install-travis-docker | sh -xe
+language: bash
+
+services:
+- docker
 
 script:
-  - ./run 'docker build -t moul/debootstrap-builder . && docker run moul/debootstrap-builder echo Build succeed'
+- docker build -t moul/debootstrap-builder .
+- docker runmoul/debootstrap-builder echo Build succeed
