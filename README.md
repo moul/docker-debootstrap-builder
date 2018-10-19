@@ -1,6 +1,8 @@
 Debootstrap Builder
 ===================
 
+[![GuardRails badge](https://badges.production.guardrails.io/moul/docker-debootstrap-builder.svg)](https://www.guardrails.io)
+
 This is a Docker build environment container for debootstrap.
 You can use this container to produce a root filesystem tar that you can use for building debootstrap containers from scratch.
 See the example directory for how you would normally use debootstrap-builder.
